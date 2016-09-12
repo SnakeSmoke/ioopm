@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+  int i=0,j=0,f=0;
+  
+  for(i=1; i <= atoi(argv[1]); i++){
+    
+    for(j=1; j <= i*atoi(argv[2]); j++){
+      printf("#");
+	}
+    printf("\n");
+    f = f + i* atoi(argv[2]);
+    // j = j + atoi(argv[2]);
+  }
+  printf("Total: %d\n ", f);
+  return 0;
+}

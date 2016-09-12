@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+
+void print (char *str){
+ 
+int i = 0;
+
+ for(i=0; i <= strlen(str); i++)
+   putchar(str[i]);
+}
+
+
+
+
+int main (int argc, char *argv[]) {
+
+  print(argv[1]);
+  return 0; 
+
+}
